@@ -1,11 +1,12 @@
---- netwox-5.12.0-src/src/config.dat.orig	Wed Mar 31 14:12:05 2004
-+++ netwox-5.12.0-src/src/config.dat	Wed Mar 31 14:12:28 2004
-@@ -4,7 +4,7 @@
+diff -urN netwox-5.23.0-src.orig/src/config.dat netwox-5.23.0-src/src/config.dat
+--- netwox-5.23.0-src.orig/src/config.dat	2004-08-30 18:51:55.000000000 +0000
++++ netwox-5.23.0-src/src/config.dat	2004-09-07 14:55:01.310416288 +0000
+@@ -7,7 +7,7 @@
  
  ##########################################################################
- ### installation prefix directory of netwib [should not need to be modified]
+ ### installation prefix directory of netwib
 -NETWIBDEF_INSTPREFIX=/usr/local
 +NETWIBDEF_INSTPREFIX=/usr
  
- ##########################################################################
- ### installation destination directory [should not need to be modified]
+ ### installation destination directory of netwib
+ NETWIBDEF_INSTDESTDIR=""
