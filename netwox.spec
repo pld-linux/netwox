@@ -1,13 +1,13 @@
 Summary:	A toolbox for network administrators and network hackers
 Summary(pl):	Zestaw narzêdzi dla administratorów sieci i hackerów sieciowych
 Name:		netwox
-Version:	5.27.0
+Version:	5.28.0
 Release:	1
 Epoch:		0
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.laurentconstantin.com/common/netw/netwox/download/v5/%{name}-%{version}-src.tgz
-# Source0-md5:	193bb5184828a4b246982ad3a35f0ea9
+# Source0-md5:	fb06458a9e80a8dd2f09fcdc0fb49bd9
 Patch0:		%{name}-config.patch
 URL:		http://www.laurentconstantin.com/en/netw/netwox/
 BuildRequires:	netwib-devel >= %{version}
