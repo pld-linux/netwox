@@ -1,13 +1,14 @@
 Summary:	A toolbox for network administrators and network hackers
 Summary(pl):	Zestaw narzêdzi dla administratorów sieci i hackerów sieciowych
 Name:		netwox
-Version:	5.3.0
+Version:	5.12.0
 Release:	1
 Epoch:		0
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.laurentconstantin.com/common/netw/netwox/download/v5/%{name}-%{version}-src.tgz
-# Source0-md5:	056903c6c6e819b14b3021abe5ec6f6e
+# Source0-md5:	e119443cc5f2ed8fb9a2eb06abb1eeba
+Patch0:		%{name}-config.patch
 URL:		http://www.laurentconstantin.com/en/netw/netwox/
 BuildRequires:	netwib-devel
 BuildRequires:	sed >= 4.0
@@ -24,10 +25,12 @@ sieciowej netwib.
 
 %prep
 %setup -q -n %{name}-%{version}-src
+%patch0 -p1
 
 %build
 cd src
-./genemake
+./genemake \
+	NETWIBDEF_INSTPREFIX="/usr"
 sed -i -e 's#444#644#' -e 's#555#755#g' Makefile
 %{__make} \
         CC="%{__cc}" \
