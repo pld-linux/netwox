@@ -12,6 +12,7 @@ Patch0:		%{name}-config.patch
 URL:		http://www.laurentconstantin.com/en/netw/netwox/
 BuildRequires:	netwib-devel >= %{version}
 BuildRequires:	sed >= 4.0
+BuildRequires:	libnet-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
