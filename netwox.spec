@@ -1,13 +1,13 @@
 Summary:	A toolbox for network administrators and network hackers
 Summary(pl):	Zestaw narzêdzi dla administratorów sieci i hackerów sieciowych
 Name:		netwox
-Version:	5.30.0
+Version:	5.33.0
 Release:	1
 Epoch:		0
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.laurentconstantin.com/common/netw/netwox/download/v5/%{name}-%{version}-src.tgz
-# Source0-md5:	4fb5e2d21ce6fac6f6442f3d9556e3e6
+# Source0-md5:	63366bbc77ac6ec6dba453caddad558c
 Patch0:		%{name}-config.patch
 URL:		http://www.laurentconstantin.com/en/netw/netwox/
 BuildRequires:	libnet-devel
@@ -48,7 +48,7 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
         INSTUSERGROUP="$(id -u):$(id -g)"
 
 rm -f $RPM_BUILD_ROOT%{_mandir}/man1/netwox.1
-echo ".so netwox53.1" > $RPM_BUILD_ROOT%{_mandir}/man1/netwox.1
+echo ".so netwox533.1" > $RPM_BUILD_ROOT%{_mandir}/man1/netwox.1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
