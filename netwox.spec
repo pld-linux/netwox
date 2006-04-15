@@ -1,7 +1,8 @@
 Summary:	A toolbox for network administrators and network hackers
 Summary(pl):	Zestaw narzêdzi dla administratorów sieci i hackerów sieciowych
 Name:		netwox
-Version:	5.34.0
+%define         _base_version   5.34
+Version:	%{_base_version}.0
 Release:	1
 Epoch:		0
 License:	GPL
@@ -15,6 +16,8 @@ BuildRequires:	libpcap-devel
 BuildRequires:	netwib-devel >= %{version}
 BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_man_suffix	%(echo %{_base_version} | tr -d . )
 
 %description
 Netwox is a toolbox for network administrators and network hackers.
@@ -48,7 +51,7 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
         INSTUSERGROUP="$(id -u):$(id -g)"
 
 rm -f $RPM_BUILD_ROOT%{_mandir}/man1/netwox.1
-echo ".so netwox533.1" > $RPM_BUILD_ROOT%{_mandir}/man1/netwox.1
+echo ".so netwox%{_man_suffix}.1" > $RPM_BUILD_ROOT%{_mandir}/man1/netwox.1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
