@@ -1,5 +1,5 @@
 Summary:	A toolbox for network administrators and network hackers
-Summary(pl):	Zestaw narz阣zi dla administrator體 sieci i hacker體 sieciowych
+Summary(pl.UTF-8):   Zestaw narz臋dzi dla administrator贸w sieci i hacker贸w sieciowych
 Name:		netwox
 %define		_base_version	5.34
 Version:	%{_base_version}.0
@@ -23,9 +23,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Netwox is a toolbox for network administrators and network hackers.
 Netwox contains over 100 tools using network library netwib.
 
-%description -l pl
-Netwox to zestaw narz阣zi dla administrator體 sieci i hacker體
-sieciowych. Zawiera ponad 100 narz阣zi u縴waj眂ych biblioteki
+%description -l pl.UTF-8
+Netwox to zestaw narz臋dzi dla administrator贸w sieci i hacker贸w
+sieciowych. Zawiera ponad 100 narz臋dzi u偶ywaj膮cych biblioteki
 sieciowej netwib.
 
 %prep
