@@ -1,5 +1,5 @@
 Summary:	A toolbox for network administrators and network hackers
-Summary(pl.UTF-8):   Zestaw narzędzi dla administratorów sieci i hackerów sieciowych
+Summary(pl.UTF-8):	Zestaw narzędzi dla administratorów sieci i hackerów sieciowych
 Name:		netwox
 %define		_base_version	5.34
 Version:	%{_base_version}.0
